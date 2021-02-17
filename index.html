@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+	<!--FONTAWESOME-->
+	<link href="css/fontawesome/css/all.min.css" rel="stylesheet">
+
+	<!--CUSTOM STYLES-->
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/config.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+	<!-- As 3 meta tags acima *devem* vir em primeiro lugar dentro do `head`; qualquer outro conteúdo deve vir *após* essas tags -->
+	<title>Treino Bootstrap</title>
+
+</head>
+
+<body>
+	<!--HEADER-->
+	<div id="header" class="bg-dark fixed-top">
+		<div class="container">
+			<nav id="barratop" class="navbar navbar-expand-lg navbar-dark">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img src="assets/logo.svg" class="img-fluid logo-resize"/>
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Conversor</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Calculator</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Theory</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!--//HEADER-->
+
+	<!--DIV CALC/CONV-->
+	<div id="calc">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6 calculator border border-primary">
+					<h1>Loren Ipsum</h1>
+					<h4>Aqui vão os inputs, botoes e demais itens pertencentes a calculadora</h4>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--RODAPÉ-->
+	<footer class="text-center">
+		<div class="contanier">
+			<div id="rodape" class="row">
+				<!--INFOS-->
+				<div class="col-md-4 bg-dark"></div>
+				<!--FINAL INFOS-->
+
+				<!--REDES SOCIAIS-->
+				<div class="col-md-4 bg-dark social">
+					<h4>REDES SOCIAIS</h4>
+					<a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/">
+						<i class="fab fa-fw fa-facebook-f"></i>
+					  </a>
+					  <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/">
+						<i class="fab fa-fw fa-instagram"></i>
+					  </a>
+					  <a class="btn btn-outline-light btn-social mx-1" href="https://br.linkedin.com/">
+						<i class="fab fa-fw fa-linkedin-in"></i>
+					  </a>
+					  <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/">
+						<i class="fab fa-fw fa-github"></i>
+					  </a>
+				</div>
+				<!--FIM REDES SOCIAIS-->
+
+				<div class="col-md-4 bg-dark"></div>
+			</div>
+		</div>
+	</footer>
+
+	
+	<!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>

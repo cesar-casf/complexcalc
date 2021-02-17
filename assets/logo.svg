@@ -1,0 +1,32 @@
+<svg id="complexcalc" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="315" height="73" viewBox="0 0 315 73">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 48px;
+        font-family: Roboto;
+        font-weight: 800;
+		fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #3e2a35;
+        stroke: #000;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="168" y="15" width="81" height="71" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#1f35d8"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <text id="Comple" class="cls-1" x="-1" y="49">Comple</text>
+  <text id="Calc" class="cls-1" x="221" y="49">Calc</text>
+  <g transform="translate(-17 -14)" style="fill: #3e2a35; filter: url(#filter)">
+    <path id="X" class="cls-2" d="M248.99,86.009H218.246L208.234,69.1,198.222,86.009H168.01l20.732-36.177-19.8-34.842h30.345l9.746,16.242,9.48-16.242h29.681L228.257,49.833Z" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use transform="translate(-17 -14)" xlink:href="#X" style="stroke: #000; filter: none; fill: none"/>
+</svg>
