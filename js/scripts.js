@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {
-    //FIXED HEADER
+    //FIXAR HEADER
     // window.onscroll = function () {
     //   if (window.pageYOffset > 100) {
     //     $("#header").addClass("fixed-top");
