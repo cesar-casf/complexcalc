@@ -4,7 +4,6 @@ html {
 }
 
 #header {
-
   top: 0;
   width: 100%;
   background-color: transparent;
@@ -37,7 +36,6 @@ html {
 
 #header .nav-link:hover {
 	border-bottom: solid 2px var(--primary);
-
   }
 
   .logo-resize {
@@ -50,7 +48,7 @@ html {
 }
 
 #calc .calculator{
-	height: 800px;
+	height: 500px;
 }
 
 #calc .border{
@@ -68,6 +66,15 @@ html {
 	color: white;
 	align-items: center;
 	justify-content: center;
+}
+
+.copy{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #111416;
+	height: 50px;
+	font-size: small;
+	color: #fff;
 }
 
 .btn-social {

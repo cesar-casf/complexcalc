@@ -15,6 +15,9 @@
 	<!--FONTAWESOME-->
 	<link href="css/fontawesome/css/all.min.css" rel="stylesheet">
 
+	<!--ANIMATE-->
+	<link href="css/animate/animate.css" rel="stylesheet">
+
 	<!--CUSTOM STYLES-->
 	<link href="css/styles.css" rel="stylesheet">
 	<link href="css/config.css" rel="stylesheet">
@@ -50,7 +53,7 @@
 								<a class="nav-link active" href="#">Calculator</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active" href="#">Theory</a>
+								<a class="nav-link active" href="#theory">Theory</a>
 							</li>
 						</ul>
 					</div>
@@ -74,14 +77,39 @@
 		</div>
 	</div>
 
+	<!--THEORY-->
+	<div class="container">
+		<div id="theory"class="row">
+			<div class="col-md-6" style="margin-top: 200px;">
+				<h4>Theory</h4>
+				<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis eros vitae arcu posuere mattis ac nec orci. Cras leo magna, lobortis nec gravida at, sagittis sit amet massa. Sed sed rhoncus augue. Proin non elementum elit, nec finibus felis. Nulla facilisi. Vivamus accumsan libero et sollicitudin placerat. Cras tempor, nulla ac accumsan elementum, justo dolor elementum nibh, sed vulputate libero metus vel libero. Vivamus et dignissim ipsum, in porta leo.
+					<br/>
+						Nulla ex eros, rutrum vel sem at, interdum consectetur ex. In quis porta felis. Mauris pretium lacinia metus, quis aliquet mauris tincidunt sollicitudin. Integer at tellus porttitor, bibendum libero sed, imperdiet odio. Aliquam in viverra ligula. Quisque rutrum egestas nibh, vel porta enim laoreet in. Vestibulum interdum sapien vitae elit mollis auctor ac porttitor tellus. Donec eget elit pulvinar, tempus elit vel, tincidunt dolor.
+					<br/>
+						Nullam vehicula id ligula a ultrices. Nam condimentum, quam eu bibendum rhoncus, leo tellus molestie purus, ac mollis orci tellus eget turpis. Integer vitae mauris eros. Fusce ac congue purus. Nam ligula est, semper ut nisl et, fringilla egestas nisi. Mauris a quam in diam dignissim eleifend. Nullam laoreet hendrerit auctor. Nulla et consequat est. Maecenas quis sodales felis. Mauris velit erat, rhoncus vitae dolor at, lobortis commodo metus. Sed mattis tortor id neque pretium dictum. Donec faucibus diam tortor, nec fringilla orci convallis eget. Etiam fermentum ipsum vel sapien molestie cursus.
+				</p>
+			</div>
+			<div class="col-md-6" style="margin-top: 200px;">
+				<img src="https://www.hackmath.net/images/cplx_number2.jpg"/>
+			</div>
+		</div>
+	</div>
+
 
 	<!--RODAPÉ-->
-	<footer class="text-center">
+	<footer class="footer text-center">
 		<div class="contanier">
 			<div id="rodape" class="row">
-				<!--INFOS-->
-				<div class="col-md-4 bg-dark"></div>
-				<!--FINAL INFOS-->
+
+				<!--DONATE-->
+				<div class="col-md-4 bg-dark social">
+					<h4>FAÇA UMA DOAÇÃO</h4>
+					<a class="btn btn-outline-light btn-social mx-1" href="https://www.paypal.com">
+						<i class="fas fa-heart wow heartBeat" data-wow-delay="300ms" data-wow-iteration="infinite" style="color: crimson;"></i>
+					</a>
+				</div>
+				<!--DOANTE-->
 
 				<!--REDES SOCIAIS-->
 				<div class="col-md-4 bg-dark social">
@@ -101,14 +129,30 @@
 				</div>
 				<!--FIM REDES SOCIAIS-->
 
-				<div class="col-md-4 bg-dark"></div>
+				<!--SOBRE-->
+				<div class="col-md-4 bg-dark social">
+					<h4>SOBRE NÓS</h4>
+					<p>Lorem ipsum dolor sit amet.</p>
+				</div>
+				<!--SOBRE-->
 			</div>
 		</div>
+
+		<div class="copy row text-center">
+			<div id="col-md-12">
+				<p>Complex Calc © 2021</p>
+			</div>
+		</div>
+
 	</footer>
 
 	
 	<!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 	<!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/scripts.js"></script>
