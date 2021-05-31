@@ -10,21 +10,21 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
 
 	<!-- Bootstrap -->
-	<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
 
 	<!--FONTAWESOME-->
-	<link href="css/fontawesome/css/all.min.css" rel="stylesheet">
+	<link href="../css/fontawesome/css/all.min.css" rel="stylesheet">
 
 	<!--ANIMATE-->
-	<link href="css/animate/animate.css" rel="stylesheet">
+	<link href="../css/animate/animate.css" rel="stylesheet">
 
 	<!--CUSTOM STYLES-->
-	<link href="css/styles.css" rel="stylesheet">
-	<link href="css/config.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
+	<link href="../css/styles.css" rel="stylesheet">
+	<link href="../css/config.css" rel="stylesheet">
+	<link href="../css/responsive.css" rel="stylesheet">
 
 	<!-- As 3 meta tags acima *devem* vir em primeiro lugar dentro do `head`; qualquer outro conteúdo deve vir *após* essas tags -->
-	<title>Complex Calculator</title>
+	<title>CompleX Calculator: Calculator</title>
 
 </head>
 
@@ -35,7 +35,7 @@
 			<nav id="barratop" class="navbar navbar-expand-lg navbar-dark">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="#">
-						<img src="assets/logo.svg" class="img-fluid logo-resize"/>
+						<img src="../assets/logo.svg" class="img-fluid logo-resize" />
 					</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,10 +68,84 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3"></div>
-				<div class="col-md-6 border border-primary">
-					<h1>Welcome to Complex Calculator.</h1>
-					<p>We made this content with great care to help students and professionals to make calculations and conversions easily and without complications.</p>
-					<p>We do not charge anything for this, but we ask that you please deactivate your <b style="color: red">ad blocker</b> to help us. We do not show abusive ads or open any links without your permission.</p>
+				<div class="col-md-6 calculator border border-primary">
+					<h2 class="text-center pt-1">Calculator</h2>
+					<!--PRIMEIRO VALOR-->
+					<div class="row ms-1">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="flexRadio" id="flexRadio" value="rec">
+							<label class="form-check-label" for="flexRadio">
+								Rectangular
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="flexRadio" id="flexRadio0" value="pol" checked>
+							<label class="form-check-label" for="flexRadio">
+								Polar
+							</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-group mb-3">
+							<input type="number" class="form-control" placeholder="Real" aria-label="real" id="real">
+							<span class="input-group-text"> +i </span>
+							<input type="number" class="form-control" placeholder="Imaginary" aria-label="imaginary" id="imaginary">
+						</div>
+
+						<div class="input-group mb-3">
+							<input type="number" class="form-control" placeholder="Module" aria-label="module" id="module">
+							<span class="input-group-text"> ∠ </span>
+							<input type="number" class="form-control" placeholder="Angle" aria-label="angle" id="angle">
+						</div>
+					</div>
+					<!--fim PRIMEIRO VALOR-->
+
+					<!--BUTTOM GROUP-->
+					<div class="row justify-content-center mb-3">
+						<div class="btn-group col-md-8 " role="group" aria-label="Basic outlined example">
+							<button type="button" class="btn btn-outline-primary" onclick="plus()">+</button>
+							<button type="button" class="btn btn-outline-primary" onclick="minus()">-</button>
+							<button type="button" class="btn btn-outline-primary" onclick="mult()">x</button>
+							<button type="button" class="btn btn-outline-primary" onclick="div()">÷</button>
+						</div>
+					</div>
+					<!--fim BUTTOM GROUP-->
+
+					<!--SEGUNDO VALOR-->
+					<div class="row ms-1">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="flexRadio1" id="flexRadio1" value="rec">
+							<label class="form-check-label" for="flexRadio1">
+								Rectangular
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="flexRadio1" id="flexRadio2" value="pol" checked>
+							<label class="form-check-label" for="flexRadio1">
+								Polar
+							</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-group mb-3">
+							<input type="number" class="form-control" placeholder="Real" aria-label="real" id="real1">
+							<span class="input-group-text"> +i </span>
+							<input type="number" class="form-control" placeholder="Imaginary" aria-label="imaginary" id="imaginary1">
+						</div>
+
+						<div class="input-group mb-3">
+							<input type="number" class="form-control" placeholder="Module" aria-label="module" id="module1">
+							<span class="input-group-text"> ∠ </span>
+							<input type="number" class="form-control" placeholder="Angle" aria-label="angle" id="angle1">
+						</div>
+					</div>
+					<!--fimSEGUNDO VALOR-->
+
+					<div>
+						<label for="floatingTextarea2">Result:</label>
+						<textarea class="form-control" placeholder="Result" id="resultArea"
+							style="height: 100px; resize: none;" disabled></textarea>
+					</div>
 				</div>
 				<div class="col-md-3"></div>
 			</div>
@@ -80,7 +154,7 @@
 
 	<!--THEORY-->
 	<div class="container">
-		<div id="theory"class="row">
+		<div id="theory" class="row">
 			<div class="col-md-6" style="margin-top: 200px;">
 				<h4>Theory</h4>
 				<p>Complex numbers are written in algebraic form as follows: a + bi(Rectangular form), we know that a and b
@@ -136,7 +210,8 @@
 				<div class="col-md-4 bg-dark social">
 					<h4>FAÇA UMA DOAÇÃO</h4>
 					<a class="btn btn-outline-light btn-social mx-1" href="https://www.paypal.com/donate/?business=H3XYP7EZDLF6U">
-						<i class="fas fa-heart wow heartBeat" data-wow-delay="300ms" data-wow-iteration="infinite" style="color: crimson;"></i>
+						<i class="fas fa-heart wow heartBeat" data-wow-delay="300ms" data-wow-iteration="infinite"
+							style="color: crimson;"></i>
 					</a>
 				</div>
 				<!--FIM DOANTE-->
@@ -146,16 +221,16 @@
 					<h4>SOCIAL</h4>
 					<a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/">
 						<i class="fab fa-fw fa-facebook-f"></i>
-					  </a>
-					  <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/">
+					</a>
+					<a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/">
 						<i class="fab fa-fw fa-instagram"></i>
-					  </a>
-					  <a class="btn btn-outline-light btn-social mx-1" href="https://br.linkedin.com/">
+					</a>
+					<a class="btn btn-outline-light btn-social mx-1" href="https://br.linkedin.com/">
 						<i class="fab fa-fw fa-linkedin-in"></i>
-					  </a>
-					  <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/">
+					</a>
+					<a class="btn btn-outline-light btn-social mx-1" href="https://github.com/">
 						<i class="fab fa-fw fa-github"></i>
-					  </a>
+					</a>
 				</div>
 				<!--FIM REDES SOCIAIS-->
 
@@ -177,16 +252,17 @@
 		</div>
 	</footer>
 
-	
+
 	<!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/wow.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/wow.min.js"></script>
 	<script>
 		new WOW().init();
 	</script>
 	<!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="js/scripts.js"></script>
+	<script src="../js/scripts.js"></script>
+	<script src="../js/verify.js"></script>
 </body>
 
 </html>
