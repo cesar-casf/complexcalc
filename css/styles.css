@@ -3,6 +3,8 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+
+
 #header {
   top: 0;
   width: 100%;
@@ -39,6 +41,7 @@ html {
   }
 
   .logo-resize {
+	font-family: "Roboto", sans-serif;
 	width: 60%;
 	height: 60%;
   }
